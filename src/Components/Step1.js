@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect }from 'react'
 import { Route, Routes, useLocation, useNavigate} from 'react-router-dom'
 import Round1 from './Step1/Round1'
 import Round2 from './Step1/Round2'
@@ -14,9 +14,16 @@ export default function Step1() {
     const isRoot = location.pathname === '/Step1';
     const navigate = useNavigate();
 
+    useEffect(() => {
+        document.title = "노인 인지 문제 // 1단계"
+        return() =>{
+            document.title = "노인 인지 문제"
+        }    }, []);
+
   return (
     <div>
         {isRoot ? (
+            // 기본값 - roundBtn || 이전 페이지 버튼 - BtnBack || 제출된 라운드 - roundClear || 미구현 라운드 - roundBtnDisabled
             <nav>
                 <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
                 <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>

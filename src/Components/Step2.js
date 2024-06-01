@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Route, Routes, useLocation, useNavigate} from 'react-router-dom'
 import Round1 from './Step2/Round1'
 import Round2 from './Step2/Round2'
@@ -13,6 +13,12 @@ export default function Step2() {
   const location = useLocation();
   const isRoot = location.pathname === '/Step2';
   const navigate = useNavigate();
+
+    useEffect(() => {
+        document.title = "노인 인지 문제 // 2단계"
+        return() =>{
+            document.title = "노인 인지 문제"
+        }    }, []);
 
 return (
   <div>
