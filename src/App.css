@@ -21,6 +21,8 @@ html, body {
 #container {
     flex: 1;
     padding: 20px; /* 적절한 여백 설정 */
+    display: flex;
+    justify-content: center;
 }
 
 footer {

@@ -1,14 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function Mainpage() {
+  const navigate = useNavigate();
   return (
     <div>
       MainPage<br/>
-      <Link to={'/Step1'}>스텝1</Link><br/>
-      <Link to={'/Step2'}>스텝2</Link><br/>
-      <Link to={'/Step3'}>스텝3</Link><br/>
-      <Link to={'/Step4'}>스텝4</Link>
+      <button onClick={() => navigate('/Step1')}>스텝1</button><br/>
+      <button onClick={() => navigate('/Step2')}>스텝2</button><br/>
+      <button onClick={() => navigate('/Step3')}>스텝3</button><br/>
+      <button onClick={() => navigate('/Step4')}>스텝4</button>
     </div>
   )
 }
