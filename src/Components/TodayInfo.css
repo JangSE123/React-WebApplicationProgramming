@@ -1,9 +1,9 @@
-.Direction{
+.title .Direction{
     font-size: 18px;
     margin: 10px;
 }
 
-button{
+.tdInfoBtn{
     width: 32px;
     height: 32px;
     margin: 0 4px;
