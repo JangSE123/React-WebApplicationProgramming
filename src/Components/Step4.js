@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Route, Routes, useLocation} from 'react-router-dom'
+import { Route, Routes, useLocation, useNavigate} from 'react-router-dom'
 import Round1 from './Step4/Round1'
 import Round2 from './Step4/Round2'
 import Round3 from './Step4/Round3'
@@ -12,23 +12,24 @@ import Round8 from './Step4/Round8'
 export default function Step4() {
   const location = useLocation();
   const isRoot = location.pathname === '/Step4';
+  const navigate = useNavigate();
 
 return (
   <div>
       {isRoot ? (
           <nav>
-            <Link to="/">이전 페이지</Link><br/>
-            <Link to="Round1">1회차</Link><br/>
-            <Link to="Round2">2회차</Link><br/>
-            <Link to="Round3">3회차</Link><br/>
-            <Link to="Round4">4회차</Link><br/>
-            <Link to="Round5">5회차</Link><br/>
-            <Link to="Round6">6회차</Link><br/>
-            <Link to="Round7">7회차</Link><br/>
-            <Link to="Round8">8회차</Link>
+              <button onClick={() => navigate('/')}>이전 페이지</button><br/>
+              <button onClick={() => navigate('Round1')}>1회차</button><br/>
+              <button onClick={() => navigate('Round2')}>2회차</button><br/>
+              <button onClick={() => navigate('Round3')}>3회차</button><br/>
+              <button onClick={() => navigate('Round4')}>4회차</button><br/>
+              <button onClick={() => navigate('Round5')}>5회차</button><br/>
+              <button onClick={() => navigate('Round6')}>6회차</button><br/>
+              <button onClick={() => navigate('Round7')}>7회차</button><br/>
+              <button onClick={() => navigate('Round8')}>8회차</button>
           </nav>
       ) : (
-          <Link to="/Step4">돌아가기</Link>
+        <button onClick={() => navigate('/Step4')}>돌아가기</button>
       )}
       
       <Routes>
