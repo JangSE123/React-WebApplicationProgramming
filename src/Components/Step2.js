@@ -18,29 +18,29 @@ return (
   <div>
       {isRoot ? (
           <nav>
-              <button onClick={() => navigate('/')}>이전 페이지</button><br/>
-              <button onClick={() => navigate('Round1')}>1회차</button><br/>
-              <button onClick={() => navigate('Round2')}>2회차</button><br/>
-              <button onClick={() => navigate('Round3')}>3회차</button><br/>
-              <button onClick={() => navigate('Round4')}>4회차</button><br/>
-              <button onClick={() => navigate('Round5')}>5회차</button><br/>
-              <button onClick={() => navigate('Round6')}>6회차</button><br/>
-              <button onClick={() => navigate('Round7')}>7회차</button><br/>
-              <button onClick={() => navigate('Round8')}>8회차</button>
+              <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
+              <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>
+              <button onClick={() => navigate('Round2')} className={"roundBtn roundBtnDisabled"}>2회차</button><br/>
+              <button onClick={() => navigate('Round3')} className={"roundBtn"}>3회차</button><br/>
+              <button onClick={() => navigate('Round4')} className={"roundBtn"}>4회차</button><br/>
+              <button onClick={() => navigate('Round5')} className={"roundBtn"}>5회차</button><br/>
+              <button onClick={() => navigate('Round6')} className={"roundBtn"}>6회차</button><br/>
+              <button onClick={() => navigate('Round7')} className={"roundBtn"}>7회차</button><br/>
+              <button onClick={() => navigate('Round8')} className={"roundBtn"}>8회차</button>
           </nav>
       ) : (
-        <button onClick={() => navigate('/Step2')}>돌아가기</button>
+          <button onClick={() => navigate('/Step2')}>돌아가기</button>
       )}
-      
+
       <Routes>
-          <Route path='Round1' element = {<Round1 />} />
-          <Route path='Round2' element = {<Round2 />} />
-          <Route path='Round3' element = {<Round3 />} />
-          <Route path='Round4' element = {<Round4 />} />
-          <Route path='Round5' element = {<Round5 />} />
-          <Route path='Round6' element = {<Round6 />} />
-          <Route path='Round7' element = {<Round7 />} />
-          <Route path='Round8' element = {<Round8 />} />
+          <Route path='Round1' element={<Round1/>}/>
+          <Route path='Round2' element={<Round2/>}/>
+          <Route path='Round3' element={<Round3/>}/>
+          <Route path='Round4' element={<Round4/>}/>
+          <Route path='Round5' element={<Round5/>}/>
+          <Route path='Round6' element={<Round6/>}/>
+          <Route path='Round7' element={<Round7/>}/>
+          <Route path='Round8' element={<Round8/>}/>
       </Routes>
   </div>
 )
