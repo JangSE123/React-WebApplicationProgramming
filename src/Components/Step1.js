@@ -23,9 +23,8 @@ export default function Step1() {
   return (
     <div>
         {isRoot ? (
-            // 기본값 - roundBtn || 이전 페이지 버튼 - BtnBack || 제출된 라운드 - roundClear || 미구현 라운드 - roundBtnDisabled
             <nav>
-                <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
+                {/* <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/> */}
                 <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>
                 <button onClick={() => navigate('Round2')} className={"roundBtn roundBtnDisabled"}>2회차</button><br/>
                 <button onClick={() => navigate('Round3')} className={"roundBtn"}>3회차</button><br/>
@@ -35,9 +34,7 @@ export default function Step1() {
                 <button onClick={() => navigate('Round7')} className={"roundBtn"}>7회차</button><br/>
                 <button onClick={() => navigate('Round8')} className={"roundBtn"}>8회차</button>
             </nav>
-        ) : (
-            <button onClick={() => navigate('/Step1')}>돌아가기</button>
-        )}
+        ) : null}
 
         <Routes>
             <Route path='Round1' element={<Round1/>}/>
