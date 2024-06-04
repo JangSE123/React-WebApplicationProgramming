@@ -35,9 +35,7 @@ return (
               <button onClick={() => navigate('Round7')} className={"roundBtn"}>7회차</button><br/>
               <button onClick={() => navigate('Round8')} className={"roundBtn"}>8회차</button>
           </nav>
-      ) : (
-          <button onClick={() => navigate('/Step4')} className={"center"}>돌아가기</button>
-      )}
+      ) : null}
 
       <Routes>
           <Route path='Round1' element={<Round1/>}/>
