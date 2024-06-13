@@ -1,0 +1,57 @@
+#weather_container {
+    width: auto;
+    height: auto;
+    border: 2px solid;
+    padding: 20px;
+    justify-content : center;
+}
+
+#subjectTitle {
+    color: red;
+    font-weight: bold;
+}
+
+#underText {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#descContainer {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#descTable {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#descTable-header {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 25px;
+    height: 40px;
+}
+
+#descTable td {
+    padding: 8px;
+}
+
+#numberCell {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr {
+    height: 60px;
+}
+
+td, th {
+    border: 1px solid black;
+}

@@ -1,0 +1,14 @@
+input[name="quiz2"] {
+    width: 400px;
+    height: 30px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: bold;
+}
+
+#img_Step1_Round1 {
+    width: 200px;
+    height: auto;
+}
