@@ -28,13 +28,13 @@ export default function Step2() {
   useEffect(() => {
     document.title = "노인 인지 문제 // 2단계";
   
-    if (localStorage.getItem('submitted')) {
-      setScore(localStorage.getItem('totalScore') || 0);
-      setYear(localStorage.getItem('year') || '');
-      setMonth(localStorage.getItem('month') || '');
-      setDay(localStorage.getItem('day') || '');
-      setWeekday(localStorage.getItem('weekday') || '');
-      setSelect(localStorage.getItem('selectedWeather') || '');
+    if (localStorage.getItem('submittedStep2_1')) {
+      setScore(localStorage.getItem('totalScoreStep2_1') || 0);
+      setYear(localStorage.getItem('yearStep2_1') || '');
+      setMonth(localStorage.getItem('monthStep2_1') || '');
+      setDay(localStorage.getItem('dayStep2_1') || '');
+      setWeekday(localStorage.getItem('weekdayStep2_1') || '');
+      setSelect(localStorage.getItem('selectedWeatherStep2_1') || '');
     }
   
     return () => {

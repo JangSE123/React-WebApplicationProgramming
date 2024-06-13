@@ -28,13 +28,23 @@ export default function Step4() {
     useEffect(() => {
         document.title = "노인 인지 문제 // 4단계"
 
-        if (localStorage.getItem('submitted')) {
-            setScore(localStorage.getItem('totalScore') || 0);
-            setYear(localStorage.getItem('year') || '');
-            setMonth(localStorage.getItem('month') || '');
-            setDay(localStorage.getItem('day') || '');
-            setWeekday(localStorage.getItem('weekday') || '');
-            setSelect(localStorage.getItem('selectedWeather') || '');
+        if (localStorage.getItem('submittedStep4_2')) {
+            setScore(localStorage.getItem('totalScoreStep4_2') || 0);
+            setYear(localStorage.getItem('yearStep4_2') || '');
+            setMonth(localStorage.getItem('monthStep4_2') || '');
+            setDay(localStorage.getItem('dayStep4_2') || '');
+            setWeekday(localStorage.getItem('weekdayStep4_2') || '');
+            setSelect(localStorage.getItem('selectedWeatherStep4_2') || '');
+        }
+
+        if (localStorage.getItem('submittedStep4_?')) {
+            setScore(localStorage.getItem('totalScoreStep4_?') || 0);
+            setYear(localStorage.getItem('yearStep4_?') || '');
+            setMonth(localStorage.getItem('monthStep4_?') || '');
+            setDay(localStorage.getItem('dayStep4_?') || '');
+            setWeekday(localStorage.getItem('weekdayStep4_?') || '');
+            setSelect(localStorage.getItem('selectedWeatherStep4_?') || '');
+            //여기 사용하시면 될것같습니다 밑에 button 수정이랑
         }
 
         return() =>{
@@ -46,25 +56,25 @@ export default function Step4() {
         const rect = e.target.getBoundingClientRect();
         setButtonPosition({ x: rect.right, y: rect.top });
         setHovered(true);
-      };
-    
-      const handleButtonMouseLeave = () => {
+    };
+
+    const handleButtonMouseLeave = () => {
         setHovered(false);
-      };
+    };
 
     return (
-        <div className='step2-container'>
+        <div className='step4-container'>
             {isRoot ? (
                 <nav>
                     <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
-                    <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>
-                    <button onMouseEnter={handleButtonMouseEnter} onMouseLeave={handleButtonMouseLeave} onClick={() => navigate('Round2')} className={score >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
-                    <button onClick={() => navigate('Round3')} className={"roundBtn"}>3회차</button><br/>
-                    <button onClick={() => navigate('Round4')} className={"roundBtn"}>4회차</button><br/>
-                    <button onClick={() => navigate('Round5')} className={"roundBtn"}>5회차</button><br/>
-                    <button onClick={() => navigate('Round6')} className={"roundBtn"}>6회차</button><br/>
-                    <button onClick={() => navigate('Round7')} className={"roundBtn"}>7회차</button><br/>
-                    <button onClick={() => navigate('Round8')} className={"roundBtn"}>8회차</button>
+                    <button onClick={() => navigate('Round1')} className={"roundBtn roundBtnDisabled"}>1회차</button><br/>
+                    <button onMouseEnter={(e) => handleButtonMouseEnter('Round2')} onMouseLeave={handleButtonMouseLeave} onClick={() => navigate('Round2')} className={score >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
+                    <button onClick={() => navigate('Round3')} className={"roundBtn roundBtnDisabled"}>3회차</button><br/>
+                    <button onClick={() => navigate('Round4')} className={"roundBtn roundBtnDisabled"}>4회차</button><br/>
+                    <button onClick={() => navigate('Round5')} className={"roundBtn roundBtnDisabled"}>5회차</button><br/>
+                    <button onClick={() => navigate('Round6')} className={"roundBtn roundBtnDisabled"}>6회차</button><br/>
+                    <button onClick={() => navigate('Round7')} className={"roundBtn roundBtnDisabled"}>7회차</button><br/>
+                    <button onClick={() => navigate('Round8')} className={"roundBtn roundBtnDisabled"}>8회차</button>
                     {hovered && (
                         <div className="info-popup" style={{ top: buttonPosition.y, left: buttonPosition.x }}>
                             <p>{year}년 {month}월 {day}일 {weekday}요일</p>

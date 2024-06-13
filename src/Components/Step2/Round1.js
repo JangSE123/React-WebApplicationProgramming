@@ -23,12 +23,12 @@ export default function Round1() {
     if (key === 'month') setMonth(value);
     if (key === 'day') setDay(value);
     if (key === 'weekday') setWeekday(value);
-    localStorage.setItem(key, value);
+    localStorage.setItem(`Step2_1_${key}`, value);
   };
 
   const handleWeatherClick = (type) => {
     setSelect(type);
-    localStorage.setItem('selectedWeather', type);
+    localStorage.setItem('selectedWeatherStep2_1', type);
   };
 
   const [stage2Inputs, setStage2Inputs] = useState({
@@ -131,13 +131,13 @@ export default function Round1() {
   const handleSubmit = () => {
     localStorage.clear();
     const totalScore = calculateScore();
-    localStorage.setItem('totalScore', totalScore);
-    localStorage.setItem('year', year);
-    localStorage.setItem('month', month);
-    localStorage.setItem('day', day);
-    localStorage.setItem('weekday', weekday);
-    localStorage.setItem('selectedWeather', select);
-    localStorage.setItem('submitted', true);
+    localStorage.setItem('totalScoreStep2_1', totalScore);
+    localStorage.setItem('yearStep2_1', year);
+    localStorage.setItem('monthStep2_1', month);
+    localStorage.setItem('dayStep2_1', day);
+    localStorage.setItem('weekdayStep2_1', weekday);
+    localStorage.setItem('selectedWeatherStep2_1', select);
+    localStorage.setItem('submittedStep2_1', true);
     navigate('/Step2');
     window.location.reload();
   };
