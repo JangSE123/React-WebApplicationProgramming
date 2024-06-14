@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {useNavigate} from "react-router-dom";
 import Round6TodayInfo1 from "./Round6_TodayInfo1";
-import flowerItems from "./Round6/FlowerItems";
+// import flowerItems from "./Round6/FlowerItems";
 import Stage1 from "./Round6/Stage1";
 import Stage2 from "./Round6/Stage2";
 import Stage3 from "./Round6/Stage3";
@@ -229,7 +229,7 @@ export default function Round6() {
     };
 
     const handleSubmit = () => {
-        localStorage.clear();
+        // localStorage.clear();
         const totalScore = calculateScore();
         localStorage.setItem('totalScoreStep4_6', totalScore);
         localStorage.setItem('yearStep4_6', year);
@@ -239,7 +239,7 @@ export default function Round6() {
         localStorage.setItem('selectedWeatherStep4_6', select);
         localStorage.setItem('submittedStep4_6', true);
         navigate('/Step4');
-        // window.location.reload();
+        window.location.reload();
     };
 
 
