@@ -5,7 +5,7 @@ import Stage1 from './Round1Component/Stage1';
 import Stage2 from './Round1Component/Stage2';
 import Stage3 from './Round1Component/Stage3';
 import Stage4 from './Round1Component/Stage4';
-import Round1TodayInfo1 from './Round1_TodayInfo';
+import Round1TodayInfo from './Round1Component/Round1_TodayInfo';
 
 export default function Round1() {
   const navigate = useNavigate();
@@ -129,7 +129,7 @@ export default function Round1() {
   };
 
   const handleSubmit = () => {
-    localStorage.clear();
+    // localStorage.clear();
     const totalScore = calculateScore();
     localStorage.setItem('totalScoreStep2_1', totalScore);
     localStorage.setItem('yearStep2_1', year);
@@ -149,7 +149,7 @@ export default function Round1() {
           <div>
             <div id='stage1'>
               <div id='weather_container'>
-                <Round1TodayInfo1
+                <Round1TodayInfo
                   year={year}
                   month={month}
                   day={day}
@@ -159,7 +159,7 @@ export default function Round1() {
                   handleWeatherClick={handleWeatherClick}
                 />
               </div>
-              <Stage1 subject={{ title: '전기 절약 방법' }} />
+              <Stage1 title={'전기 절약 방법'} />
             </div>
             <button onClick={() => navigate('/Step2')} className={"roundBtn BtnBack"}>돌아가기</button><br />
             <button onClick={() => goToStage('Stage2')} className={"roundBtn"}>문제 풀기</button>
@@ -170,7 +170,7 @@ export default function Round1() {
         return (
           <div>
             <div id='stage2'>
-              <Stage2 subject={{ title: '전기 절약 방법' }} inputs={stage2Inputs} handleChange={handleStage2Change} />
+              <Stage2 title={'전기 절약 방법'} inputs={stage2Inputs} handleChange={handleStage2Change} />
             </div>
             <button onClick={() => goToStage('Stage1')} className={"roundBtn BtnBack"}>돌아가기</button><br />
             <button onClick={() => goToStage('Stage3')} className={"roundBtn"}>다음 문제 풀기</button>
@@ -181,7 +181,7 @@ export default function Round1() {
         return (
           <div>
             <div id='stage3'>
-              <Stage3 subject={{ title: '전기 절약 방법' }} inputs={stage3Inputs} handleChange={handleStage3Change} />
+              <Stage3 title={'전기 절약 방법'} inputs={stage3Inputs} handleChange={handleStage3Change} />
             </div>
             <button onClick={() => goToStage('Stage2')} className={"roundBtn BtnBack"}>돌아가기</button><br />
             <button onClick={() => goToStage('Stage4')} className={"roundBtn"}>다음 문제 풀기</button>
@@ -192,7 +192,7 @@ export default function Round1() {
         return (
           <div>
             <div id='stage4'>
-              <Stage4 subject={{ title: '전기 절약 방법' }} inputs={stage4Inputs} handleChange={handleStage4Change} />
+              <Stage4 title={'전기 절약 방법'} inputs={stage4Inputs} handleChange={handleStage4Change} />
             </div>
             <button onClick={() => goToStage('Stage3')} className={"roundBtn BtnBack"}>돌아가기</button><br />
             <button onClick={handleSubmit} className={"roundBtn roundClear"}>제출하기</button>

@@ -6,14 +6,14 @@ export default function Stage1(props) {
     <div>
         <h2>
             다음은 일상생활에 필요한&nbsp;
-            <span id="subjectTitle">{props.subject.title}</span>입니다.<br/>
+            <span id="title">{props.title}</span>입니다.<br/>
             소리 내어 읽어 보세요.
         </h2>
         <div id='descContainer'>
             <table id='descTable'>
                 <tbody>
                     <tr>
-                        <td id='descTable-header' colSpan="2">{props.subject.title}</td>
+                        <td id='descTable-header' colSpan="2">{props.title}</td>
                     </tr>
                     <tr>
                         <td id="numberCell">1</td>
@@ -43,7 +43,7 @@ export default function Stage1(props) {
             </table>
         </div>
         <div id='underText'>
-            <br/><span id="subjectTitle">{props.subject.title}</span>을 기억해 주세요
+            <br/><span id="title">{props.title}</span>을 기억해 주세요
         </div>
     </div>
   )

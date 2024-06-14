@@ -44,7 +44,6 @@ export default function Step4() {
             setDay(localStorage.getItem('dayStep4_?') || '');
             setWeekday(localStorage.getItem('weekdayStep4_?') || '');
             setSelect(localStorage.getItem('selectedWeatherStep4_?') || '');
-            //여기 사용하시면 될것같습니다 밑에 button 수정이랑
         }
 
         return() =>{
@@ -68,7 +67,7 @@ export default function Step4() {
                 <nav>
                     <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
                     <button onClick={() => navigate('Round1')} className={"roundBtn roundBtnDisabled"}>1회차</button><br/>
-                    <button onMouseEnter={(e) => handleButtonMouseEnter('Round2')} onMouseLeave={handleButtonMouseLeave} onClick={() => navigate('Round2')} className={score >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
+                    <button onMouseEnter={handleButtonMouseEnter} onMouseLeave={handleButtonMouseLeave} onClick={() => navigate('Round2')} className={score >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
                     <button onClick={() => navigate('Round3')} className={"roundBtn roundBtnDisabled"}>3회차</button><br/>
                     <button onClick={() => navigate('Round4')} className={"roundBtn roundBtnDisabled"}>4회차</button><br/>
                     <button onClick={() => navigate('Round5')} className={"roundBtn roundBtnDisabled"}>5회차</button><br/>

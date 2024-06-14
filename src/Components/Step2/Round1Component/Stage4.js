@@ -9,7 +9,7 @@ export default function Stage4(props) {
     <div>
       <h2>
           앞서 기억해 둔&nbsp;
-          <span id="subjectTitle">{props.subject.title}</span>입니다.<br />
+          <span id="title">{props.title}</span>입니다.<br />
           틀린 부분을 찾아 알맞게 고쳐보세요.(1~6)
       </h2>
       <div>

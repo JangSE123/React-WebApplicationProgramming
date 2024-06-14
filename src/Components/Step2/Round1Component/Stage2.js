@@ -8,7 +8,7 @@ export default function Stage2(props) {
     <div>
       <h2>
           앞서 기억해 둔&nbsp;
-          <span id="subjectTitle">{props.subject.title}</span>을<br />
+          <span id="title">{props.title}</span>을<br />
           순서에 맞게 &lt;보기&gt;에서 찾아 빈 칸에 적어보세요.
       </h2>
       <div id='descContainer'>
@@ -33,7 +33,7 @@ export default function Stage2(props) {
         <table id='quizTable'>
           <tbody>
               <tr>
-                  <td id='quizTable-header' colSpan="2">{props.subject.title}</td>
+                  <td id='quizTable-header' colSpan="2">{props.title}</td>
               </tr>
               <tr>
                   <td id="numberCell">1</td>
