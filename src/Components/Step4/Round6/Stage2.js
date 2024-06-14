@@ -1,100 +1,122 @@
 import React from 'react';
 import krMaps from "../../../image/krMaps.svg";
 import flowerItems from "./FlowerItems";
-import './s4-r6-q2.css'
+import './Stage2.css'
 import RememberFlower from "./rememberFlower";
+import {GoTriangleRight} from "react-icons/go";
 
-function S4R6Q2(props) {
-    function sortArr(arr) {
-        arr.sort(() => Math.random() - 0.5);
-    }
-    const flagArr = [0,1,2,3,4,5];
+function Stage2(props) {
 
-    sortArr(flagArr)
+    const { inputs, handleChange } = props;
+
     return (
         <>
-            <div id={"container-s4-r6-q2"}>
+            <div>
                 <h2 className={"title Direction"}>
-                    ▶ 앞서 기억해 둔 <span className={"red"}>꽃</span>은 각 도(道)를 상징하는 꽃입니다. 각 꽃의 지역을 확인하고, 빈칸에 꽃 이름을 적어보세요.
+                    <GoTriangleRight /> 앞서 기억해 둔 <span className={"red"}>꽃</span>은 각 도(道)를 상징하는 꽃입니다.
+                    <br/>&emsp;각 꽃의 지역을 확인하고, 빈칸에 꽃 이름을 적어보세요.
                 </h2>
-                <table id={"s4-r6-q2-Table1"}>
+
+                <table id={"stage2_t1"}>
                     <tr className={"table-img-container"}>
                         <td>
-                            <img src={flowerItems[flagArr[0]].img} alt={flowerItems[flagArr[0]].alt}/>
+                            <img src={flowerItems[0].img} alt={flowerItems[0].alt}/>
                         </td>
                         <td>
-                            <img src={flowerItems[flagArr[1]].img} alt={flowerItems[flagArr[1]].alt}/>
+                            <img src={flowerItems[1].img} alt={flowerItems[1].alt}/>
                         </td>
                         <td>
-                            <img src={flowerItems[flagArr[2]].img} alt={flowerItems[flagArr[2]].alt}/>
+                            <img src={flowerItems[2].img} alt={flowerItems[2].alt}/>
                         </td>
                     </tr>
                     <tr className={"table-type-container"}>
                         <td>
-                            {flowerItems[flagArr[0]].location} - <input></input>
+                            {flowerItems[0].location} - <input type='text' id='quiz1_1' name='quiz1'
+                                                               value={inputs.quiz1_1} onChange={handleChange}/>
                         </td>
                         <td>
-                            {flowerItems[flagArr[1]].location} - <input></input>
+                            {flowerItems[1].location} - <input type='text' id='quiz1_2' name='quiz1'
+                                                               value={inputs.quiz1_2} onChange={handleChange}/>
                         </td>
                         <td>
-                            {flowerItems[flagArr[2]].location} - <input></input>
+                            {flowerItems[2].location} - <input type='text' id='quiz1_3' name='quiz1'
+                                                               value={inputs.quiz1_3} onChange={handleChange}/>
                         </td>
                     </tr>
                     <tr className={"table-img-container"}>
                         <td>
-                            <img src={flowerItems[flagArr[3]].img} alt={flowerItems[flagArr[3]].alt}/>
+                            <img src={flowerItems[3].img} alt={flowerItems[3].alt}/>
                         </td>
                         <td>
-                            <img src={flowerItems[flagArr[4]].img} alt={flowerItems[flagArr[4]].alt}/>
+                            <img src={flowerItems[4].img} alt={flowerItems[4].alt}/>
                         </td>
                         <td>
-                            <img src={flowerItems[flagArr[5]].img} alt={flowerItems[flagArr[5]].alt}/>
+                            <img src={flowerItems[5].img} alt={flowerItems[5].alt}/>
                         </td>
                     </tr>
                     <tr className={"table-type-container"}>
                         <td>
-                            {flowerItems[flagArr[3]].location} - <input></input>
+                            {flowerItems[3].location} - <input type='text' id='quiz1_4' name='quiz1'
+                                                               value={inputs.quiz1_4} onChange={handleChange}/>
                         </td>
                         <td>
-                            {flowerItems[flagArr[4]].location} - <input></input>
+                            {flowerItems[4].location} - <input type='text' id='quiz1_5' name='quiz1'
+                                                               value={inputs.quiz1_5} onChange={handleChange}/>
                         </td>
                         <td>
-                            {flowerItems[flagArr[5]].location} - <input></input>
+                            {flowerItems[5].location} - <input type='text' id='quiz1_6' name='quiz1'
+                                                               value={inputs.quiz1_6} onChange={handleChange}/>
                         </td>
                     </tr>
                 </table>
 
                 <p className={"spacer"}></p>
 
-                <table id={"s4-r6-q2-Table2"}>
+                <table id={"stage2_t2"}>
                     <tr>
                         <td rowSpan={6} className={"mapContainer"}>
                             <img src={krMaps} className={"Maps"} id={"krMaps"} alt={"한국 지도"}/>
                         </td>
                         <td>
-                            {flowerItems[flagArr[0]].location} - <input></input>
+                            {flowerItems[0].location} - <input type='text' id='quiz1_1' name='quiz1'
+                                                               value={inputs.quiz1_1} onChange={handleChange}/>
                         </td>
                     </tr>
-                    <tr><td>
-                            {flowerItems[flagArr[1]].location} - <input></input>
-                    </td></tr>
-                    <tr><td>
-                            {flowerItems[flagArr[2]].location} - <input></input>
-                    </td></tr>
-                    <tr><td>
-                            {flowerItems[flagArr[3]].location} - <input></input>
-                    </td></tr>
-                    <tr><td>
-                            {flowerItems[flagArr[4]].location} - <input></input>
-                    </td></tr>
-                    <tr><td>
-                            {flowerItems[flagArr[5]].location} - <input></input>
-                    </td></tr>
+                    <tr>
+                        <td>
+                            {flowerItems[1].location} - <input type='text' id='quiz1_2' name='quiz1'
+                                                               value={inputs.quiz1_2} onChange={handleChange}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {flowerItems[2].location} - <input type='text' id='quiz1_3' name='quiz1'
+                                                               value={inputs.quiz1_3} onChange={handleChange}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {flowerItems[3].location} - <input type='text' id='quiz1_4' name='quiz1'
+                                                               value={inputs.quiz1_4} onChange={handleChange}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {flowerItems[4].location} - <input type='text' id='quiz1_5' name='quiz1'
+                                                               value={inputs.quiz1_5} onChange={handleChange}/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {flowerItems[5].location} - <input type='text' id='quiz1_6' name='quiz1'
+                                                               value={inputs.quiz1_6} onChange={handleChange}/>
+                        </td>
+                    </tr>
                 </table>
-                <RememberFlower />
+                <RememberFlower/>
             </div>
         </>
     );
 }
 
-export default S4R6Q2;
+export default Stage2;

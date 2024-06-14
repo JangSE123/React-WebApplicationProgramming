@@ -2,7 +2,7 @@ import React from 'react';
 import './Round6_TodayInfo.css';
 import { GoTriangleRight } from "react-icons/go";
 
-export default function Round6_TodayInfo(props) {
+export default function Round6_TodayInfo1(props) {
 
     const btnItems = [{type: 'sun'},{type:'cloud'},{type:'rain'},{type:'snow'}]
 

@@ -58,3 +58,31 @@ footer {
     font-style: italic;
     border: none;
 }
+
+.roundBtn {
+    font-size: 28px;
+    width: 680px;
+    border-radius: 15px;
+    border: none;
+    height: 80px;
+    margin: 10px;
+    background-color: #FFF1A9
+}
+
+.roundBtn:hover {
+    border: 2px solid grey;
+}
+
+.roundClear{
+    background-color: #23FF6C;
+}
+
+.roundBtnDisabled, .BtnBack{
+    background-color: #B3B3B3;
+}
+
+.roundBtnDisabled, .roundBtnDisabled:hover{
+    color: rgb(68, 68, 68);
+    font-style: italic;
+    border: none;
+}

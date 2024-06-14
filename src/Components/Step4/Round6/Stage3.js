@@ -1,9 +1,10 @@
 import React from 'react';
 import flowerItems from "./FlowerItems";
-import './s4-r6-q3.css'
+import './Stage3.css'
 import RememberFlower from "./rememberFlower";
+import {GoTriangleRight} from "react-icons/go";
 
-function S4R6Q3(props) {
+function Stage3(props) {
     function sortArr(arr) {
         arr.sort(() => Math.random() - 0.5);
     }
@@ -14,9 +15,9 @@ function S4R6Q3(props) {
     return (
         <>
             <h2 className={"title Direction"}>
-                ▶ 앞서 기억해 둔 <span className={'red'}>꽃</span>의 꽃말입니다. 소리 내어 읽어보세요.
+                <GoTriangleRight /> 앞서 기억해 둔 <span className={'red'}>꽃</span>의 꽃말입니다. 소리 내어 읽어보세요.
             </h2>
-            <table id={"s4-r6-q3-Table1"}>
+            <table id={"stage3_t1"}>
                 <tr>
                     <td>
                         <table className={"portrait-table"}>
@@ -125,11 +126,11 @@ function S4R6Q3(props) {
                 </tr>
             </table>
             <h3 className={"title Direction"}>
-                ▶ 꽃의 꽃말을 보고 생각나는 사람이 있다면, 그 사람에게 꽃을 선물해 봅시다.
+                <GoTriangleRight /> 꽃의 꽃말을 보고 생각나는 사람이 있다면, 그 사람에게 꽃을 선물해 봅시다.
             </h3>
             <RememberFlower />
         </>
     );
 }
 
-export default S4R6Q3;
+export default Stage3;

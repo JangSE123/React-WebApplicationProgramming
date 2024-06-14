@@ -1,4 +1,4 @@
-#s4-r6-q3-Table1 img{
+#stage3_t1 img{
     width: 180px;
     height: 250px;
     object-fit: cover;
@@ -7,14 +7,14 @@
     margin-right: auto;
 }
 
-#s4-r6-q3-Table1 .portrait-table td{
+#stage3_t1 .portrait-table td{
     border: 1px solid black;
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
 }
 
-#s4-r6-q3-Table1 .portrait-table{
+#stage3_t1 .portrait-table{
     width: 480px;
 }
 
