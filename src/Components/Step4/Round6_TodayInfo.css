@@ -13,7 +13,6 @@
 }
 .select{
     border: 2px darkolivegreen solid;
-
 }
 button[id='sun']{
     background: url("https://img.icons8.com/?size=32&id=648&format=png&color=000000") no-repeat center/contain;
@@ -34,29 +33,9 @@ input{
     text-align: right;
     width: 40px;
     height: 20px;
-    font-size: 16px;
 }
 
 .weekSelect{
     text-align: center;
     width: 40px;
-    font-size: 16px;
-}
-
-.time{
-    border: 1px solid grey;
-    border-radius: 25px;
-    padding: 10px 10px 10px 10px;
-    margin-left: 15px;
-}
-
-.weather{
-    border: 1px solid grey;
-    border-radius: 25px;
-    padding: 10px 15px 10px 15px;
-    margin-left: 10px;
-}
-
-.spacer{
-    margin: 15px;
 }

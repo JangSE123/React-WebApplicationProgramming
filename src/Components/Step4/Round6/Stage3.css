@@ -1,0 +1,39 @@
+#stage3_t1 img{
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stage3_t1 .portrait-table td{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#stage3_t1 .portrait-table{
+    width: 480px;
+}
+
+
+.bold{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 35px;
+}
+
+td .string{
+    text-align: center;
+    width: 200px;
+    font-size: 28px;
+}
+
+.red{
+    display: inline-flex;
+    color: red;
+    font-weight: bold;
+}

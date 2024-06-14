@@ -1,0 +1,52 @@
+#stage4 .center img{
+    width: 640px;
+    border: 1px solid black;
+}
+
+#stage4 .center{
+    text-align: center;
+}
+
+#stage4_1 input[name=quiz2], #stage4_2 input[name=quiz2]{
+    width: 90px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#stage4_1 input[name=quiz2]:hover, #stage4_2 input[name=quiz2]:hover{
+    border: 1px solid yellowgreen;
+    transition: outline 200ms;
+    outline: 2px solid yellowgreen;
+}
+
+#stage4_1 input[name=quiz2]:focus, #stage4_2 input[name=quiz2]:focus{
+    transition: outline 250ms;
+    outline: 2px solid dodgerblue;
+}
+
+#stage4_2 input[name=quiz3]{
+    width: 490px;
+    height: 35px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#stage4_2 input[name=quiz3]:hover{
+    border: 1px solid yellowgreen;
+    transition: outline 250ms;
+    outline: 2px solid yellowgreen;
+}
+
+#stage4_2 input[name=quiz3]:focus{
+    transition: outline 250ms;
+    outline: 2px solid dodgerblue;
+}
+
+#stage4_1, #stage4_2{
+    font-size: 18px;
+}

@@ -1,0 +1,77 @@
+#stage5_t1{
+    width: 705px;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dddddd;
+}
+
+#stage5_t1 td{
+    padding: 2px;
+    text-align: center;
+}
+
+#stage5_t1 input[type=text]{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#stage5_t1 input[type=text]:hover{
+    border: 1px solid  greenyellow;
+    transition: outline 250ms;
+    outline: 2px solid greenyellow;
+}
+
+#stage5_t1 input[type=text]:focus{
+    transition: outline 250ms;
+    outline: 2px solid dodgerblue;
+}
+
+#stage5_t1, #stage5_t2 td{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#stage5_t2{
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#stage5_t2 td{
+    padding: 25px;
+    font-size: 20px;
+    background-color: white;
+}
+
+#stage5_t2 input[type=text]{
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+#stage5_t2 input[type=text]:hover{
+    outline: 1px solid greenyellow;
+}
+
+#stage5_t2 input[type=text]:focus{
+    outline: 1px solid dodgerblue;
+}
+
+#stage5_t2 .Maps{
+    width: 430px;
+}
+
+#stage5_t2 .mapContainer{
+    background-color: white;
+    padding: 25px;
+}
