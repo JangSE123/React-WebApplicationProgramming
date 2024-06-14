@@ -24,7 +24,7 @@ export default function Step1() {
     <div>
         {isRoot ? (
             <nav>
-                {/* <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/> */}
+                <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
                 <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>
                 <button onClick={() => navigate('Round2')} className={"roundBtn roundBtnDisabled"}>2회차</button><br/>
                 <button onClick={() => navigate('Round3')} className={"roundBtn"}>3회차</button><br/>
