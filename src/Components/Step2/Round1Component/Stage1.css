@@ -48,10 +48,10 @@
     font-weight: bold;
 }
 
-tr {
+.step2_round1_stage1 tr {
     height: 60px;
 }
 
-td, th {
+.step2_round1_stage1 td, th {
     border: 1px solid black;
 }
