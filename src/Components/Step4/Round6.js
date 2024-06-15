@@ -1,13 +1,12 @@
 import React, {useState} from 'react'
 import {useNavigate} from "react-router-dom";
 import Round6TodayInfo1 from "./Round6_TodayInfo1";
-// import flowerItems from "./Round6/FlowerItems";
-import Stage1 from "./Round6/Stage1";
-import Stage2 from "./Round6/Stage2";
-import Stage3 from "./Round6/Stage3";
-import Stage4 from "./Round6/Stage4";
-import Stage5 from "./Round6/Stage5";
-import Stage6 from "./Round6/Stage6";
+import Stage1 from "./Round6Component/Stage1";
+import Stage2 from "./Round6Component/Stage2";
+import Stage3 from "./Round6Component/Stage3";
+import Stage4 from "./Round6Component/Stage4";
+import Stage5 from "./Round6Component/Stage5";
+import Stage6 from "./Round6Component/Stage6";
 import './Round6.css'
 
 const { sortByASC } = require("hangul-util");

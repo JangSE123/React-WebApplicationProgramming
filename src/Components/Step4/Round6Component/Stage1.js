@@ -4,7 +4,7 @@ import './Stage1.css'
 import RememberFlower from "./rememberFlower";
 import { GoTriangleRight } from "react-icons/go";
 
-export default function Stage1(props) {
+export default function Stage1() {
 
 
     return (

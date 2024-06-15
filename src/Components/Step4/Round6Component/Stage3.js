@@ -4,7 +4,7 @@ import './Stage3.css'
 import RememberFlower from "./rememberFlower";
 import {GoTriangleRight} from "react-icons/go";
 
-function Stage3(props) {
+function Stage3() {
     function sortArr(arr) {
         arr.sort(() => Math.random() - 0.5);
     }
