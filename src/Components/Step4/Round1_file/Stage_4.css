@@ -1,0 +1,30 @@
+.OX_Btn {
+    width: 64px;
+    height: 64px;
+    margin: 20px;
+    border: none;
+    position: relative;
+    background-color: white;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    padding: 0; 
+}
+
+.OX_Btn.select::after {
+    content: "✓";
+    color: red;
+    font-size: 80px;
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+button[id='O'] {
+    background-image: url('../../../image/o.png');
+}
+
+button[id='X'] {
+    background-image: url('../../../image/x.png');
+}

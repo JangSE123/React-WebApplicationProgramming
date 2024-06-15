@@ -1,0 +1,64 @@
+#Img-Quiz {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
+
+.Img_Checker {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border: none;
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 0; 
+}
+
+.Img_Checker.select::after {
+    content: "✓";
+    color: blue;
+    font-size: 100px;
+    position: absolute;
+    top: 5%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-weight: bold;
+}
+
+button[id^='Check_'] {
+    background-size: cover; 
+}
+
+button[id='Check_1'] {
+    background-image: url('../../../image/Check_1.png');
+}
+
+button[id='Check_2'] {
+    background-image: url('../../../image/Check_2.png');
+}
+
+button[id='Check_3'] {
+    background-image: url('../../../image/Check_3.png');
+}
+
+button[id='Check_4'] {
+    background-image: url('../../../image/Check_4.png');
+}
+
+button[id='Check_5'] {
+    background-image: url('../../../image/Check_5.png');
+}
+
+button[id='Check_6'] {
+    background-image: url('../../../image/Check_6.png');
+}
+
+button[id='Check_7'] {
+    background-image: url('../../../image/Check_7.png');
+}
+
+button[id='Check_8'] {
+    background-image: url('../../../image/Check_8.png');
+}

@@ -25,14 +25,14 @@ export default function Step1() {
         {isRoot ? (
             <nav>
                 <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
-                <button onClick={() => navigate('Round1')} className={"roundBtn roundClear"}>1회차</button><br/>
+                <button onClick={() => navigate('Round1')} className={"roundBtn roundBtnDisabled"}>1회차</button><br/>
                 <button onClick={() => navigate('Round2')} className={"roundBtn roundBtnDisabled"}>2회차</button><br/>
-                <button onClick={() => navigate('Round3')} className={"roundBtn"}>3회차</button><br/>
-                <button onClick={() => navigate('Round4')} className={"roundBtn"}>4회차</button><br/>
-                <button onClick={() => navigate('Round5')} className={"roundBtn"}>5회차</button><br/>
-                <button onClick={() => navigate('Round6')} className={"roundBtn"}>6회차</button><br/>
-                <button onClick={() => navigate('Round7')} className={"roundBtn"}>7회차</button><br/>
-                <button onClick={() => navigate('Round8')} className={"roundBtn"}>8회차</button>
+                <button onClick={() => navigate('Round3')} className={"roundBtn roundBtnDisabled"}>3회차</button><br/>
+                <button onClick={() => navigate('Round4')} className={"roundBtn roundBtnDisabled"}>4회차</button><br/>
+                <button onClick={() => navigate('Round5')} className={"roundBtn roundBtnDisabled"}>5회차</button><br/>
+                <button onClick={() => navigate('Round6')} className={"roundBtn roundBtnDisabled"}>6회차</button><br/>
+                <button onClick={() => navigate('Round7')} className={"roundBtn roundBtnDisabled"}>7회차</button><br/>
+                <button onClick={() => navigate('Round8')} className={"roundBtn roundBtnDisabled"}>8회차</button>
             </nav>
         ) : null}
 
