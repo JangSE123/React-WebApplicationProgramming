@@ -48,3 +48,11 @@ input[name="quiz1"] {
 #quiz1_6 {
     width: 220px;
 }
+
+.step2_round1_stage2 tr { 
+    height: 60px;
+}
+
+.step2_round1_stage2 td, th { 
+    border: 1px solid black;
+}

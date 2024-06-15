@@ -10,7 +10,7 @@ export default function Stage1(props) {
             소리 내어 읽어 보세요.
         </h2>
         <div id='descContainer'>
-            <table id='descTable'>
+            <table id='descTable' className={"step2_round1_stage1"}>
                 <tbody>
                     <tr>
                         <td id='descTable-header' colSpan="2">{props.title}</td>

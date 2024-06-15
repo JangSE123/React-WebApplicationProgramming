@@ -12,7 +12,7 @@ export default function Stage2(props) {
           순서에 맞게 &lt;보기&gt;에서 찾아 빈 칸에 적어보세요.
       </h2>
       <div id='descContainer'>
-        <table id='descTable'>
+        <table id='descTable' className={"step2_round1_stage2"}>
           <tr>
             <td id='descTable-header' colSpan="3">&lt;보기&gt;</td>
           </tr>
@@ -30,7 +30,7 @@ export default function Stage2(props) {
       </div>
       <br/><br/>
       <div id='quizContainer'>
-        <table id='quizTable'>
+        <table id='quizTable' className={"step2_round1_stage2"}>
           <tbody>
               <tr>
                   <td id='quizTable-header' colSpan="2">{props.title}</td>

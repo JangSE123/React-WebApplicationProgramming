@@ -22,7 +22,7 @@ export default function Stage1(props) {
       <br/>
       <div id='quizContainer'>
         <h3>1. 다음 식품을 기억하기 쉽게 종류를 적어보세요.</h3>
-        <table id='quizTable4'>
+        <table id='quizTable4' className={"step4_round2_stage1"}>
           <thead>
             <tr>
               <td colSpan="2">

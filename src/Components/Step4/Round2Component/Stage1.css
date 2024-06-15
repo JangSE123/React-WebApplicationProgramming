@@ -79,3 +79,11 @@ input[name="quiz4"] {
   font-size: 25px;
   font-weight: bold;
 }
+
+.step4_round2_stage1 tr { 
+  height: 60px;
+}
+
+.step4_round2_stage1 td, th { 
+  border: 1px solid black;
+}

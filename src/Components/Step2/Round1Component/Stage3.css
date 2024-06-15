@@ -12,3 +12,11 @@ input[name="quiz2"] {
     width: 200px;
     height: auto;
 }
+
+.step2_round1_stage3 tr { 
+    height: 60px;
+}
+
+.step2_round1_stage3 td, th { 
+    border: 1px solid black;
+}

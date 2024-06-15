@@ -17,7 +17,7 @@ export default function Stage3(props) {
           그림을 보고 순서에 알맞게 적어 적어보세요.
       </h2>
       <div id='quizContainer'>
-        <table id='quizTable'>
+        <table id='quizTable' className={"step2_round1_stage3"}>
           <tbody>
               <tr>
                   <td id='quizTable-header' colSpan="2">{props.title}</td>
