@@ -1,0 +1,50 @@
+#quizTable {
+    width: 100%;
+    border: 2px solid;
+    border-radius: 8px;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+#quizTable-header {
+    text-align: center;
+    background-color: rgb(120, 187, 250);
+    padding: 8px;
+    font-weight: bold;
+    height: 40px;
+    font-size: 25px;
+}
+
+
+#quizContainer {
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+input[name="quiz1"] {
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: bold;
+}
+
+#quiz1_1 {
+    width: 100px;
+}
+#quiz1_2 {
+    width: 100px;
+}
+#quiz1_3 {
+    width: 150px;
+}
+#quiz1_4 {
+    width: 150px;
+}
+#quiz1_5 {
+    width: 100px;
+}
+#quiz1_6 {
+    width: 220px;
+}

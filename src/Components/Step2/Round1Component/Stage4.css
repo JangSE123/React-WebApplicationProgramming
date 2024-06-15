@@ -1,0 +1,34 @@
+input[name="quiz3"] {
+    width: 600px;
+    height: 30px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: bold;
+}
+
+#wrongOption1 {
+    font-size: larger;
+    font-weight: bold;
+}
+#wrongOption2 {
+    font-size: larger;
+    font-weight: bold;
+}
+#wrongOption3 {
+    font-size: larger;
+    font-weight: bold;
+}
+#wrongOption4 {
+    font-size: larger;
+    font-weight: bold;
+}
+#wrongOption5 {
+    font-size: larger;
+    font-weight: bold;
+}
+#wrongOption6 {
+    font-size: larger;
+    font-weight: bold;
+}

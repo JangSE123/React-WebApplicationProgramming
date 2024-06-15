@@ -1,0 +1,47 @@
+.food-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid;
+    border-radius: 8px;
+}
+
+#quiz6_1 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#quiz6_2 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#quiz6_3 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#quiz6_4 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#quiz6_5 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+#quiz6_6 {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.quiz6.selected {
+    border: 2px solid red;
+}

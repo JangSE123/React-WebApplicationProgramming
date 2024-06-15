@@ -1,0 +1,81 @@
+#weather_container {
+  width: auto;
+  height: auto;
+  border: 2px solid;
+  padding: 20px;
+  justify-content : center;
+}
+.food-item {
+  flex: 1 0 30%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.food-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+#foodimage {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+#foodname {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid;
+}
+
+#foodname1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+#foodtype1 {
+  text-align: center;
+}
+
+input[name="quiz4"] {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+#quizTable4 {
+  width: 100%;
+  border: 2px solid;
+  border-radius: 8px;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.food-types-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: aquamarine;
+  border-radius: 8px;
+
+}
+
+.food-type {
+  margin: 10px;
+  padding: 10px;
+}
+
+#foodtype {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
