@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {useNavigate} from "react-router-dom";
 import Round6TodayInfo1 from "./Round6_TodayInfo1";
-// import flowerItems from "./Round6/FlowerItems";
 import Stage1 from "./Round6/Stage1";
 import Stage2 from "./Round6/Stage2";
 import Stage3 from "./Round6/Stage3";
@@ -127,11 +126,6 @@ export default function Round6() {
         setStage5Inputs2({ ...stage5Inputs2, [id] : value });
     }
 
-    // const handleStage6Change = (ev) => {
-    //     const { id, value } = ev.target.value;
-    //     setStage6Inputs({ ...stage6Inputs, [id]: value });
-    // };
-
     const correctAnswersStage2 = {
         quiz1_1: '철쭉',
         quiz1_2: '개나리',
@@ -229,7 +223,6 @@ export default function Round6() {
     };
 
     const handleSubmit = () => {
-        // localStorage.clear();
         const totalScore = calculateScore();
         localStorage.setItem('totalScoreStep4_6', totalScore);
         localStorage.setItem('yearStep4_6', year);

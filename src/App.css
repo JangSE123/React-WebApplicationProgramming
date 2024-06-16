@@ -15,12 +15,12 @@ html, body {
     text-align: center;
     font-size: 100px;
     font-weight: bold;
-    padding: 40px; /* 상하 여백 설정 */
+    padding: 40px;
 }
 
 #container {
     flex: 1;
-    padding: 20px; /* 적절한 여백 설정 */
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
@@ -28,7 +28,7 @@ html, body {
 footer {
     background: gray;
     text-align: center;
-    padding: 10px 0; /* 상하 여백 설정 */
+    padding: 10px 0;
 }
 
 .roundBtn {

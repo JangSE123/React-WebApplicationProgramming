@@ -129,7 +129,6 @@ export default function Round1() {
   };
 
   const handleSubmit = () => {
-    // localStorage.clear();
     const totalScore = calculateScore();
     localStorage.setItem('totalScoreStep2_1', totalScore);
     localStorage.setItem('yearStep2_1', year);
