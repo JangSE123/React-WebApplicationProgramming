@@ -92,7 +92,7 @@ export default function Step4() {
                 <nav>
                     <button onClick={() => navigate('/')} className={"roundBtn BtnBack"}>이전 페이지</button><br/>
                     <button onClick={() => navigate('Round1')} className={"roundBtn"}>1회차</button><br/>
-                    <button onMouseEnter={handleButtonMouseEnter1} onMouseLeave={handleButtonMouseLeave1} onClick={() => navigate('Round2')} className={score >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
+                    <button onMouseEnter={handleButtonMouseEnter1} onMouseLeave={handleButtonMouseLeave1} onClick={() => navigate('Round2')} className={score1 >= 60 ? "roundBtn roundClear" : "roundBtn"}>2회차</button><br/>
                     <button onClick={() => navigate('Round3')} className={"roundBtn roundBtnDisabled"}>3회차</button><br/>
                     <button onClick={() => navigate('Round4')} className={"roundBtn roundBtnDisabled"}>4회차</button><br/>
                     <button onClick={() => navigate('Round5')} className={"roundBtn roundBtnDisabled"}>5회차</button><br/>
